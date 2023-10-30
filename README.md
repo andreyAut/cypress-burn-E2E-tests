@@ -11,7 +11,7 @@ Practicing "burning" tests with Cypress can be beneficial for several reasons:
 1. **Identification of unstable tests**: Repeatedly running the same test helps identify if the test is unstable or "flaky," meaning it passes and fails intermittently without any code changes.
 2. **Confirmation of failures**: If a test consistently fails during the "burn" practice, it may indicate a real issue with the application being tested.
 3. **Assessment of test reliability**: "Burn" practice can help assess the reliability of a test. If a test consistently passes during the "burn," it can increase confidence in the test's robustness.
-4. [**Identification of performance issues**](https://glebbahmutov.com/blog/burning-tests/): Running the same test repeatedly can help identify performance issues such as memory leaks that only become apparent over time or with frequent repetitions.
+4. **Identification of performance issues**: Running the same test repeatedly can help identify performance issues such as memory leaks that only become apparent over time or with frequent repetitions.
 5. **Prioritization of new or changed specs**: In some cases, modified and new specs are executed first before the rest of the tests. They also "burn" the modified and new specs by running them several times in succession.
 
 ## Cypress-grep
