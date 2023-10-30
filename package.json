@@ -1,0 +1,25 @@
+{
+  "name": "cypress-burn-e2e-tests",
+  "version": "1.0.0",
+  "description": "Burn Tests",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "headless": "npx cypress run",
+    "e2e:tests:burn": "npx cypress run --browser chrome --env grepTags=@burn,burn=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyAut/cypress-burn-E2E-tests.git"
+  },
+  "author": "andreyAut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreyAut/cypress-burn-E2E-tests/issues"
+  },
+  "homepage": "https://github.com/andreyAut/cypress-burn-E2E-tests#readme",
+  "devDependencies": {
+    "cypress": "^13.3.3",
+    "@cypress/grep": "^4.0.1"
+  }
+}
