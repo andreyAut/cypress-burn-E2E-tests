@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-10-31T01:45:34.121Z",
+    "end": "2023-10-31T01:45:36.375Z",
+    "duration": 2254
+  },
+  "results": [
+    {
+      "uuid": "0f38bd18-132d-4fbd-951d-f8ca6ad3f990",
+      "title": "",
+      "fullFile": "cypress/e2e/1-getting-started/todo.cy.js",
+      "file": "cypress/e2e/1-getting-started/todo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a043fb15-8415-4ec1-91df-adc319be6452",
+          "title": "example to-do app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "displays two todo items by default",
+              "fullTitle": "example to-do app displays two todo items by default",
+              "timedOut": null,
+              "duration": 849,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".todo-list li\").should(\"have.length\", 2);\ncy.get(\".todo-list li\").first().should(\"have.text\", \"Pay electric bill\");\ncy.get(\".todo-list li\").last().should(\"have.text\", \"Walk the dog\");",
+              "err": {},
+              "uuid": "594f79b6-4784-493b-911f-d542b3b33d09",
+              "parentUUID": "a043fb15-8415-4ec1-91df-adc319be6452",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "594f79b6-4784-493b-911f-d542b3b33d09"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 849,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/TestReport/.jsons",
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
