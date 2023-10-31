@@ -6,7 +6,9 @@
   "scripts": {
     "open": "npx cypress open",
     "headless": "npx cypress run",
-    "e2e:tests:burn": "npx cypress run --browser chrome --env grepTags=@burn,burn=5"
+    "e2e:tests:burn": "npx cypress run --browser chrome --env grepTags=@burn,burn=5",
+    "merge:reports": "mochawesome-merge cypress/TestReport/.jsons/mochawesome*.json > cypress/TestReport/cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir cypress/TestReport --charts true cypress/TestReport/cypress-combined-report.json"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,12 @@
   "homepage": "https://github.com/andreyAut/cypress-burn-E2E-tests#readme",
   "devDependencies": {
     "cypress": "^13.3.3",
-    "@cypress/grep": "^4.0.1"
+    "@cypress/grep": "^4.0.1",
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "cypress-multi-reporters": "^1.6.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }

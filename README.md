@@ -37,6 +37,20 @@ To run the Cypress Burn tests in your development environment, follow these step
 3. Run `npm install` to install project dependencies.
 4. Execute the tests with the burn tag using `npm run e2e:tests:burn` to start test execution.
 
+## Generating HTML reports of Cypress execution
+
+1. After the tests run, execute the following command to combine n mochawesome json files in just one:
+
+```
+npm run merge:reports
+```
+
+2. And generate the HTML from the combine report with:
+
+```
+npm run create:html:report
+```
+
 ## Contributions
 
 We welcome contributions to enhance our Burn tests. Feel free to open issues, submit pull requests, and help improve our quality assurance process.
